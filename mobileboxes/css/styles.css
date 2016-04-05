@@ -1,0 +1,135 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+
+body {
+	display: block;
+    margin: 0;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: inherit;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+header {
+	width: 100%;
+	float: inherit;
+	border: 5px solid black;
+	background: white;
+	display: block;
+}
+
+nav ul {
+	display: block;
+}
+
+li {
+	list-style: none;
+	display: block;
+	float: left;
+	border: 5px solid black;
+	width: 150px;
+	margin: 0 5 5 0;
+	padding: 10px 50px;
+	background-color: white;
+}
+
+button {
+	display: none;
+	float: right;
+	border: 5px solid black;
+	margin: 10px;
+	padding: 10px;
+	width: 150px;
+	background-color: white;
+}
+
+main {
+	width: 100%;
+	height: 200px;
+	border: 5px solid black;
+	margin: 15px;
+	background-color: white;
+}
+
+div {
+	border: 5px solid black;
+}
+
+.lildiv {
+	float: left;
+	width: 20%;
+	height: 200px;
+	margin: 2.5%;
+	background-color: white;
+}
+
+.bigdiv {
+	float: left;
+	width: 25%;
+	height: 200px;
+	margin: 3.5%;
+	background-color: white;
+}
+
+footer {
+	width: 100%
+	height: 200px;
+	clear: both;
+	border: 5px solid black;
+	background-color: white;
+}
+
+@media only screen and (max-width: 500px) {
+	
+	header {
+		display: block;
+	}
+
+	nav ul {
+		display: none;
+	}
+	nav ul li {
+		float: none;
+		width: 100%;
+		z-index: 100;
+		position: relative;
+	}
+
+	.butt {
+		display: block;
+    	float: none;
+	}
+
+	main {
+		margin: 5px;
+		height: 100px;
+	}
+
+	.lildiv {
+		width: 100%;
+		height: 100px;
+		clear: both;
+		margin: 5px;
+	}
+
+	.bigdiv {
+		width: 100%;
+		height: 100px;
+		float: left;
+		clear: both;
+		margin: 5px;
+	}
+}
